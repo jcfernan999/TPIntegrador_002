@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDolares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolares"
+            android:textSize="24dip" />
+
+        <EditText
+            android:id="@+id/edtDolares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvEuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euros"
+            android:textSize="24dip" />
+
+        <EditText
+            android:id="@+id/edtEuros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <RadioButton
+            android:id="@+id/rbEuroAdolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Euros a Dolares" />
+
+        <RadioButton
+            android:id="@+id/rbDolarAeuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Dolares a Euros" />
+
+        <TextView
+            android:id="@+id/tvCambio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambio a ..."
+            android:textSize="24dip" />
+
+        <EditText
+            android:id="@+id/edtCambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnConvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
+
+    </LinearLayout>
+
+</RelativeLayout>
